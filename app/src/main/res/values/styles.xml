@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="custom_actionbar" parent="@android:style/Theme.Holo.Light" >
+        <item name="android:actionBarStyle" >@style/custom_style</item>
+
+    </style>
+
+    <style name="custom_style" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">#ff0000</item>
+    </style>
+    
+    <color name="color_red">#f50000</color>
+    <color name="color_green">#009f00</color>
+
+    <color name="color_list_darkblue">#FF6767A1</color>
+    <color name="color_list_blue">#FF1658AA</color>
+
+    <color name="color_email_phone">#7989a4</color>
+
+
+</resources>

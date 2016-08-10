@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity"
+    android:orientation="vertical"
+    android:background="@drawable/button_pressed">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:background="@drawable/button_pressed"
+        android:layout_margin="1dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="K"
+                    android:id="@+id/tvDetailMain"
+                    android:gravity="center"
+                    android:visibility="invisible"
+                    android:textSize="100sp"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:typeface="monospace" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/ivDetailImage"
+                    android:scaleType="fitXY"
+                    android:visibility="invisible"
+                    android:padding="10dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:id="@+id/tvDetailName"
+                android:gravity="center|left"
+                android:paddingLeft="10dp"
+                android:shadowColor="#fffbfb"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:password="false"
+                android:letterSpacing="10" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="#7989b4"
+        android:layout_margin="1dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Phone No"
+                android:id="@+id/textView6"
+                android:layout_weight="10"
+                android:paddingTop="10dp"
+                android:clickable="false"
+                android:textColor="#1313d4"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:paddingLeft="15dp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnDetailMessage"
+                android:layout_gravity="right"
+                android:onClick="onBtnDetailMessage"
+                android:layout_weight="3"
+                android:text="SMS"
+                android:textColor="#8ae18a"
+                android:textStyle="bold|italic"
+                android:clickable="true" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="012XXX"
+            android:id="@+id/tvDetailsPhone"
+            android:layout_weight="10"
+            android:gravity="bottom"
+            android:paddingBottom="10dp"
+            android:textColor="#fff"
+            android:clickable="true"
+            android:textStyle="bold"
+            android:textSize="26sp"
+            android:typeface="serif"
+            android:paddingLeft="15dp"
+            android:onClick="onDetailsButtonPhone"
+            android:background="@color/color_email_phone"
+            android:focusable="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="#7989b4"
+        android:layout_margin="1dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Email"
+            android:id="@+id/textView8"
+            android:layout_weight="10"
+            android:paddingTop="10dp"
+            android:clickable="false"
+            android:textColor="#1313d4"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:paddingLeft="15dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="abc@gmail.com"
+            android:id="@+id/tvDetailsEmail"
+            android:layout_weight="10"
+            android:gravity="bottom"
+            android:paddingBottom="10dp"
+            android:textColor="#fff"
+            android:clickable="true"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:typeface="serif"
+            android:paddingLeft="15dp"
+            android:onClick="onDetailsButtonEmail"
+            android:background="@color/color_email_phone"
+            android:focusable="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="#7989b4"
+        android:layout_margin="1dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Address"
+            android:id="@+id/textView10"
+            android:layout_weight="10"
+            android:paddingTop="10dp"
+            android:clickable="false"
+            android:textColor="#1313d4"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:paddingLeft="15dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Tejgaon, Dhaka"
+            android:id="@+id/tvDetailsAddress"
+            android:layout_weight="10"
+            android:gravity="bottom"
+            android:paddingBottom="10dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:typeface="serif"
+            android:paddingLeft="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6.5">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="Call"
+            android:id="@+id/btnDetailsCall"
+            android:onClick="onDetailCall"
+            android:background="@drawable/call_pressed_color" />
+    </LinearLayout>
+</LinearLayout>

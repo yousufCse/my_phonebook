@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="csebd.yousuf.myphonebook.MainActivity">
+
+    <item
+        android:id="@+id/m_add_search"
+        android:icon="@android:drawable/ic_search_category_default"
+        android:orderInCategory="100"
+        android:title="Search"
+        app:showAsAction="collapseActionView|ifRoom"
+        android:actionViewClass="android.support.v7.widget.SearchView"/>
+
+    <!--next time check-->
+    <item
+        android:id="@+id/m_add_contact"
+        android:icon="@android:drawable/ic_input_add"
+        android:orderInCategory="100"
+        android:title="Add Contact"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/m_about_us"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:orderInCategory="100"
+        android:title="About us"
+        app:showAsAction="always" />
+
+</menu>
